@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Webデザイナー森 花子 ポートフォリオ jsアニメーション制作">
+  <meta property="og:url" content="URLが入る">
+  <meta property="og:description" content="森 花子のポートフォリオ jsアニメーション制作サイトです。">
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="森 花子のポートフォリオ jsアニメーション制作サイトです">
+  <title>森 花子 ポートフォリオ jsアニメーション制作</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css">
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="canonical" href="URLが入る"> <!-- ←自信で用意した公開サーバーにアップロードして正式なURLが決まった段階で書き換える -->
+
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header">
+      <div class="header-inner">
+        <h1 class="header-logo">
+          <a href="index.html">Hanako's Portfolio</a>
+        </h1>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a href="index.html#works">作品</a></li>
+            <li class="header-nav-item"><a href="index.html#skill">スキル</a></li>
+            <li class="header-nav-item"><a href="index.html#contact">プロフィール</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <article class="article">
+        <div class="article-inner">
+          <h2 class="article-title">JavaScriptアニメーション制作/2025年11月</h2>
+          <p class="article-img">
+            <img src="img/java_anime.jpg" alt="jsアニメーション制作">
+          </p>
+
+          <div class="article-body">
+            <p>
+              JavaScriptを用いたインタラクティブなアニメーション作品です。「食欲の秋」をテーマに自由に企画しました。
+              画面上部のボタンをクリックすると、おいしそうな焼き芋がランダムな速度で降りそそぎ、
+              下部では子供たちがそれを受け止めるという、ユーモアあふれる世界観を表現しています。
+              子供たちのキャラクターにはホバーを付加し、ユーザーの操作に対して「動き」で反応を返す楽しい作品です。
+            </p>
+
+            <h3 class="article-info-title">【URL】</h3>
+            <p class="link-botton"><a href="https://atmosphere1001hnk.github.io/JSanimation-site/index.html"
+                target="_blank" rel="noopener">アニメーション視聴はこちら</a>
+            </p>
+
+            <h3 class="article-info-title">【担当】</h3>
+            <p>企画立案（1時間）、デザインコンセプト（1時間）、素材収集・画像加工（2時間）、コーディング（HTML/CSS）（2時間）、JavaScript（jQuery）実装（6時間）
+            </p>
+
+            <h3 class="article-info-title">【JavaScriptアニメーション作成の目的】</h3>
+            <p>
+              本制作の目的は、静的なWebページに「動き」を加えることで、ユーザーの興味を引き、体験型のコンテンツを提供する技術を習得しました
+            </p>
+
+            <h3 class="article-info-title">【デザインについて】</h3>
+            <p>
+              「秋」を感じさせるデザインにしました。
+              背景には柔らかな秋の風景を採用し、焼き芋の茶色や子供たちのカラフルな服装が映える配色を意識しています。
+              焼き芋が落ちてくる際の挙動（物理的な動き）や、ホバー時の子供たちのリアクションに変化をつけることで視覚演出をしました。
+            </p>
+
+            <h3 class="article-info-title">【jQueryコーディングについて】</h3>
+            <p>
+              ライブラリにはjQueryを使用しスムーズな動きを実装しました。
+              animate()メソッドを活用し、焼き芋が上から下へ移動する座標制御に加え落下速度や出現位置に変化を持たせ自然な演出をしています。
+              また、ホバー時の画像切り替え、ボタンクリックをトリガーとしたイベント処理など、jQueryの強みを活かした構成にしました。
+            </p>
+
+            <h3 class="article-info-title">【困難だった点と解決策】</h3>
+            <p>
+              複数の焼き芋を順番に、かつ自然に落下させるタイミングの制御に苦労しました。
+              当初は一斉に落ちてしまい不自然でしたが、setTimeoutと各要素のインデックスを組み合わせることで、時間差をあけて、一つずつ落下させる処理に変更しました。
+              また、アニメーション終了後に要素を元の位置へ正確にリセットするコードを追記することで、何度ボタンを押しても繰り返し正しく動作するように改善しました。
+            </p>
+
+          </div>
+
+          <!-- works -->
+          <section class="works section" id="works">
+
+            <div class="inner">
+              <h2 class="title">作品</h2>
+              <div class="works-list">
+                <a class="works-item" href="works-three.html">
+                  <p class="works-img"><img src="img/three_top_night.jpg" alt="MagicBar&nbsp;Jinのトップページ"></p>
+                  <p class="works-name">マジックラボ&nbsp;Jin & MagicBar&nbsp;Jinの夜サイト/2025年12月</p>
+                  <p class="works-info">企画/情報設計/コンセプト/ペルソナ設計/ワイヤーフレーム/画像収集・加工/デザイン/コーティング/レスポンシブ対応/jQuery</p>
+                </a>
+                <a class="works-item" href="works-two.html">
+                  <p class="works-img"><img src="img/two_top.jpg" alt="癒しの空間もふもふcafeのトップページ"></p>
+                  <p class="works-name">癒しの空間もふもふcafeのCPサイト/2025年11月</p>
+                  <p class="works-info">企画/情報設計/コンセプト/ペルソナ設計/ワイヤーフレーム/画像収集・加工/デザイン/コーティング/レスポンシブ対応/jQuery</p>
+                </a>
+                <a class="works-item" href="works-one.html">
+                  <p class="works-img"><img src="img/website_one.jpg" alt="藤井税理士事務所のトップページ"></p>
+                  <p class="works-name">藤井税理士事務所のCPサイト/2025年9月</p>
+                  <p class="works-info">企画/情報設計/コンセプト/ペルソナ設計/ワイヤーフレーム/画像収集・加工/デザイン/コーティング/レスポンシブ対応/jQuery</p>
+                </a>
+                <a class="works-item" href="works-movie.html">
+                  <p class="works-img"><img src="img/movie_1.jpg" alt="動画制作"></p>
+                  <p class="works-name">動画制作(就職に向けた受講生の１日-通所夜クラス編-)/2025年12月</p>
+                  <p class="works-info">
+                    編集リーダー担当/企画書・絵コンテ作成/カット・トリミング/テキストの追加/BGM・効果音の挿入/エフェクト・トランジションの追加/マスク/シェイプオブジェクトの追加/字幕追加</p>
+                </a>
+                <a class="works-item" href="works-java.html">
+                  <p class="works-img"><img src="img/java_anime.jpg" alt="JavaScriptアニメーション制作"></p>
+                  <p class="works-name">JavaScriptアニメーション制作/2025年12月</p>
+                  <p class="works-info">HTML要素設計/スタイル設定/アニメーションループ設定/イージング関数の適用/アニメーションの終了処理</p>
+                </a>
+                <a class="works-item" href="works-banner.html">
+                  <p class="works-img"><img src="img/banner-all.jpg" alt="バナー制作"></p>
+                  <p class="works-name">バナー制作/2025年10月</p>
+                  <p class="works-info">情報設計/ペルソナ設計/スチール撮影/ラフ作成/画像加工/デザイン</p>
+                </a>
+                <a class="works-item" href="works-logo.html">
+                  <p class="works-img"><img src="img/rogo_all.jpg" alt="ロゴ制作"></p>
+                  <p class="works-name">ロゴ制作/2025年11月</p>
+                  <p class="works-info">情報設計/コンセプト設計/ペルソナ設計/デザイン/モックアップ作成</p>
+                </a>
+              </div>
+            </div> <!-- Future-Opening Web Skills -->
+          </section>
+          <!-- /works -->
+
+          <div class="home-link">
+            <a href="./#works">【Works一覧へ】</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;森 花子</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/lightbox2-2.11.4/dist/js/lightbox.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
