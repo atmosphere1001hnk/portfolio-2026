@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="description" content="昼はマジックラボ&nbsp;Jinを開校、夜はマジックショーを見ながらお食事を楽しめるMagicBarJinを営業しています。">
+    <title>マジックラボ&nbsp;Jin & MagicBar&nbsp;Jinのコーポレートサイトです</title>
+    <link rel="icon" type="image/png" href="./images/Jgrouplogo.png" sizes="32x32">
+
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP:wght@200..900&family=RocknRoll+One&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body id="top" class="day-mode">
+    <div class="header-bg">
+        <header>
+            <div class="header-container wrapper-l">
+                <div id="rogo">
+                    <a href="./index.html">
+                        <img src="./images/Jgrouplogo.png" width="32" height="32" alt="ファビコン">神グループ株式会社
+                    </a>
+                </div> <!-- rogo -->
+
+                <!-- DAY/NIGHTボタン -->
+                <div id="mode-switcher-container">
+                    <button id="switch-to-day" class="mode-switch-btn active">
+                        <img src="./images/Magiclablogo.png" width="65" height="45" alt="マジック・ラボロゴマーク">
+                        <span>マジックラボ&nbsp;Jin</span>
+                    </button>
+                    <button id="switch-to-night" class="mode-switch-btn">
+                        <img src="./images/MagicBarlogo.png" width="45" height="45" alt="マジックバーロゴマーク">
+                        <span>MagicBar&nbsp;Jin</span>
+                    </button>
+
+
+                    <!-- 予約ボタン -->
+                    <div class="top-right">
+                        <p class="day-content-block position-fixed">
+                            <a href="#contact" class="figure-link">
+                                <span class="btn-text">無料体験申込む</span>
+                            </a>
+                        </p>
+                        <p class="night-content-block hidden position-fixed">
+                            <a href="#contact" class="figure-link">
+                                <span class="btn-text">MagicBar&nbsp;Jin予約</span>
+                            </a>
+                        </p>
+                    </div> <!-- top-right -->
+                </div> <!-- mode-switcher-container -->
+            </div> <!-- header-container wrapper-l -->
+
+            <!-- グローバルメニュー -->
+            <nav class="global-nav">
+                <ul class="day-content-block">
+                    <li><a href="#school">スクール紹介</a></li>
+                    <li><a href="#course">コース</a></li>
+                    <li><a href="#cast">講師</a></li>
+                    <li><a href="#menu">月謝</a></li>
+                    <li><a href="#schedule">スケジュール</a></li>
+                    <li><a href="#goods">グッズ</a></li>
+                    <li><a href="#access">アクセス</a></li>
+                    <li><a href="#company">会社概要</a></li>
+                </ul>
+                <ul class="night-content-block hidden">
+                    <li><a href="#concept">Concept</a></li>
+                    <li><a href="#show">Magic</a></li>
+                    <li><a href="#magician">Magician</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#access-night">Access</a></li>
+                    <li><a href="#company">company</a></li>
+                </ul>
+            </nav>
+
+            <!-- ハンバーガーメニュー -->
+            <div id="hamburger-btn" class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> <!-- hamburger-btn -->
+
+            <nav id="mobile-menu">
+                <div class="mobile-menu-header">
+                    <button id="close-menu-btn" class="close-btn">✕ 閉じる</button>
+                </div>
+                <div class="mobile-menu-inner">
+                    <ul class="day-content-block">
+                        <li><a href="#school">スクール紹介</a></li>
+                        <li><a href="#course">コース</a></li>
+                        <li><a href="#cast">講師</a></li>
+                        <li><a href="#menu">月謝</a></li>
+                        <li><a href="#schedule">スケジュール</a></li>
+                        <li><a href="#goods">グッズ</a></li>
+                        <li><a href="#lunch">ランチメニュー</a></li>
+                        <li><a href="#access">アクセス</a></li>
+                        <li><a href="#company">会社概要</a></li>
+                    </ul>
+                    <ul class="night-content-block hidden">
+                        <li><a href="#concept">Concept</a></li>
+                        <li><a href="#show">Magic</a></li>
+                        <li><a href="#magician">Magician</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#access-night">Access</a></li>
+                        <li><a href="#company">company</a></li>
+                    </ul>
+                </div><!-- mobile-menu-inne -->
+            </nav> <!-- mobile-menu -->
+        </header>
+    </div> <!-- header-bg -->
+
+    <!-- TOPへ戻るボタン -->
+    <div id="back-to-top" class="back-to-top">
+        <a href="#top">▲ TOP</a>
+    </div>
+
+    <main>
+        <!-- トップ画像スライダー -->
+        <section id="hero" class="wrapper-l">
+            <!-- 昼の画像スライダー -->
+            <div class="slider day-content-block">
+                <img src="images/lab01.jpg" width="1780" height="1000" alt="マジックラボ1" class="slider-image active">
+                <img src="images/lab02.jpg" width="1780" height="1000" alt="マジックラボ2" class="slider-image">
+                <img src="images/lab03.jpg" width="1780" height="1000" alt="マジックラボ3" class="slider-image">
+
+                <!-- スマホ用　昼の画像スライダー -->
+                <img src="images/lab01_sp.jpg" width="780" height="1000" alt="マジックラボ1"
+                    class="slider-image active sp-only">
+                <img src="images/lab02_sp.jpg" width="780" height="1000" alt="マジックラボ2" class="slider-image sp-only">
+                <img src="images/lab03_sp.jpg" width="780" height="1000" alt="マジックラボ3" class="slider-image sp-only">
+            </div> <!-- slider day-content-block wrapper-l -->
+
+
+            <!-- 夜の画像スライダー -->
+            <div class="slider night-content-block hidden">
+                <img src="images/nightback04.jpg" width="1760" height="1000" alt="マジシャンによるショー1"
+                    class="slider-image active">
+                <img src="images/nightback05.jpg" width="1760" height="1000" alt="マジシャンによるショー2" class="slider-image">
+                <img src="images/nightback06.jpg" width="1760" height="1000" alt="マジシャンによるショー3" class="slider-image">
+
+                <!-- スマホ用　夜の画像スライダー -->
+                <img src="images/nightback04_sp.jpg" width="780" height="1000" alt="マジシャンによるショー1"
+                    class="slider-image active sp-only">
+                <img src="images/nightback05_sp.jpg" width="780" height="1000" alt="マジシャンによるショー2"
+                    class="slider-image sp-only">
+                <img src="images/nightback06_sp.jpg" width="780" height="1000" alt="マジシャンによるショー3"
+                    class="slider-image sp-only">
+            </div> <!-- slider night-content-block hidden wrapper-l -->
+        </section> <!-- id="hero" class="wrapper-l" -->
+
+
+        <!-- 昼キャッチコピー -->
+        <section class="day-content-block reserve-cta daybg-0">
+            <div class="wrapper-m">
+                <div class="hero-text-moved">
+                    <h1 class="en">Unlock Your Potential<br>マジックで自信と考える力を育てよう!</h1>
+                    <img src="./images/minihand.jpeg" width="2000" height="1125" alt="#X">
+                    <a href="#access" class="button-cta-large"><img src="./images/Magiclablogo.png" width="65"
+                            height="45" alt="マジック・ラボJINロゴマーク">レッスンコースを見る</a>
+                </div>
+                <div class="body-text">
+                    <p class="key-message">マジックの楽しさを知ろう!</p>
+                    <p>「自信と考える力」をマジックで育む</p>
+                    <p>人前で話すのが苦手、でも新しいことに挑戦したい!</p>
+                    <p>当マジック・ラボJinでは手品の練習を通じて</p>
+                    <p>論理的思考力とコミュニケーション能力を</p>
+                    <p>楽しく体験しながら伸ばします。</p>
+                    <p>自信を持って輝く未来へ!</p>
+                    <p>お子様の隠れた才能と自己肯定感を伸ばしませんか?</p>
+                    <h3>保護者様向け説明会、随時受付中! </h3>
+                    <p class="key-message">無料体験で、その一歩を踏み出しましょう✨</p>
+
+                    <img src="./images/lab05.jpg" width="2000" height="842" alt="教室">
+                </div> <!-- body-text -->
+
+                <!-- 無料体験に申込むボタン -->
+                <a href="#access" class="button-cta-large"><img src="./images/Magiclablogo.png" width="65" height="45"
+                        alt="マジック・ラボJINロゴマーク">無料体験に申込む</a>
+            </div> <!-- wrapper-m -->
+        </section><!-- day-content-block reserve-cta daybg-0 -->
+
+        <!-- スクール紹介/Concept -->
+        <section id="school" class="reserve-cta daybg-02">
+            <div class="wrapper-m">
+                <div class="day-content-block">
+                    <h2 class="section-title heading-school">スクール紹介</h2>
+                    <p class="key-message">マジックは最高の習い事です。</p>
+                    <p class="long-text">当スクールは、ただ手品を覚えるだけではありません。</p>
+                    <p>マジックを人前で発表することで、人見知りを克服したり、話すことが得意になったり。</p>
+                    <p>遊びを通して論理的な考え方が身につく、最高の教育プログラムです。</p>
+
+                    <div class="points-grid">
+                        <div class="point-item"><strong>✨ 自信がつく</strong></div>
+                        <div class="point-item"><strong>🗣️ 表現力UP</strong></div>
+                        <div class="point-item"><strong>🧠 論理的思考</strong></div>
+                    </div>
+                </div> <!-- day-content-block -->
+            </div> <!-- wrapper-m -->
+        </section> <!-- schoo -->
+
+
+        <!-- レッスンコース (昼のみ) -->
+        <section id="course" class="day-content-block">
+            <div class="wrapper-m">
+                <h2 class="section-title heading-lesson">レッスンコース</h2>
+                <table class="lesson-table">
+                    <thead>
+                        <tr>
+                            <th>コース名</th>
+                            <th>対象</th>
+                            <th>内容</th>
+                            <th>目標</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>子供向け 初級コース</td>
+                            <td>6歳〜中学生</td>
+                            <td>基本のカードマジック、コインマジック</td>
+                            <td>集中力、表現力を育む</td>
+                        </tr>
+                        <tr>
+                            <td>子供向け 発表会コース</td>
+                            <td>6歳〜中学生</td>
+                            <td>ステージマジック、発表技術</td>
+                            <td>人前で自信を持って発表</td>
+                        </tr>
+                        <tr>
+                            <td>大人向け 趣味コース</td>
+                            <td>高校生以上</td>
+                            <td>クロースアップマジック</td>
+                            <td>趣味として楽しむ</td>
+                        </tr>
+                        <tr>
+                            <td>大人向け&nbsp;プロ養成コース</td>
+                            <td>高校生以上</td>
+                            <td>プロ技術、演出、ビジネス</td>
+                            <td>プロマジシャンを目指す</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- wrapper-m -->
+        </section> <!-- course -->
+
+        <!-- キャスト紹介 -->
+        <section id="cast">
+            <div class="wrapper-m">
+                <!-- 講師紹介 (昼) -->
+                <div class="day-content-block daybg-02">
+                    <h2 class="section-title heading-instructor">講師の紹介</h2>
+                    <p class="cast-desc">現役のプロマジシャンから指導経験豊富な専門講師まで、総勢10名の講師が在籍しています。</p>
+                    <div class="cast-cards">
+                        <div class="cast-card">
+                            <img src="./images/instructor01.jpg" width="400" height="400" alt="講師A">
+                            <h4>講師A - 田中 太郎</h4>
+                            <p>指導歴15年。子供向けマジック教育のスペシャリスト。</p>
+                            <div class="heart" data-id="instructor01">♥</div>
+                        </div>
+                        <div class="cast-card">
+                            <img src="./images/instructor02.jpg" width="400" height="400" alt="講師B">
+                            <h4>講師B - 佐藤 花子</h4>
+                            <p>元プロマジシャン。カードマジックの技術指導が得意。</p>
+                            <div class="heart" data-id="instructor02">♥</div>
+                        </div>
+                        <div class="cast-card">
+                            <img src="./images/instructor03.jpg" width="400" height="400" alt="講師C">
+                            <h4>講師C - 鈴木 一郎</h4>
+                            <p>コインマジックの名手。初心者にも分かりやすい指導。</p>
+                            <div class="heart" data-id="instructor03">♥</div>
+                        </div>
+                        <div class="cast-card">
+                            <img src="./images/instructor04.jpg" width="400" height="400" alt="講師D">
+                            <h4>講師D - 高橋 美咲</h4>
+                            <p>ステージマジック専門。発表会コース担当。</p>
+                            <div class="heart" data-id="instructor04">♥</div>
+                        </div>
+                        <div class="cast-card">
+                            <img src="./images/instructor05.jpg" width="400" height="400" alt="講師E">
+                            <h4>講師E - 渡辺 健二</h4>
+                            <p>プロ養成コース主任。業界で20年の実績。</p>
+                            <div class="heart" data-id="instructor05">♥</div>
+                        </div>
+                        <div class="cast-card">
+                            <img src="./images/instructor06.jpg" width="400" height="400" alt="講師F">
+                            <h4>講師F - 伊藤 さくら</h4>
+                            <p>メンタルマジック専門。心理学を活かした指導。</p>
+                            <div class="heart" data-id="instructor06">♥</div>
+                        </div>
+                        <div class="cast-card">
+                            <img src="./images/instructor07.jpg" width="400" height="400" alt="講師G">
+                            <h4>講師G - 山本 誠</h4>
+                            <p>イリュージョン担当。大規模マジック指導。</p>
+                            <div class="heart" data-id="instructor07">♥</div>
+                        </div>
+                        <div class="cast-card">
+                            <img src="./images/instructor08.jpg" width="400" height="400" alt="講師H">
+                            <h4>講師H - 中村 理恵</h4>
+                            <p>子供の心理に精通。楽しく学べる授業が人気。</p>
+                            <div class="heart" data-id="instructor08">♥</div>
+                        </div>
+                    </div> <!-- cast-cards -->
+                </div> <!-- day-content-block daybg-02 -->
+
+
+
+                <!-- メニュー・料金 -->
+                <section id="menu">
+                    <div class="wrapper-m">
+                        <!-- 昼:月謝料金 -->
+                        <div class="day-content-block">
+                            <h2 class="section-title heading-price">月謝料金一覧</h2>
+                            <div class="price-list-container">
+                                <table class="price-table">
+                                    <thead>
+                                        <tr>
+                                            <th>コース</th>
+                                            <th>対象</th>
+                                            <th>回数/月</th>
+                                            <th>月謝(税別)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>子供向け 🔰 初級コース</td>
+                                            <td>6歳〜中学生</td>
+                                            <td>4回</td>
+                                            <td>¥12,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>子供向け 🗣️ 発表会コース</td>
+                                            <td>6歳〜中学生</td>
+                                            <td>6回</td>
+                                            <td>¥15,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>大人向け 趣味コース</td>
+                                            <td>高校生以上</td>
+                                            <td>2回</td>
+                                            <td>¥8,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>大人向け プロ養成コース</td>
+                                            <td>高校生以上</td>
+                                            <td>4回〜</td>
+                                            <td>¥20,000〜</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="note-price">※入会金¥10,000(税別)が別途必要です。</p>
+                                <p class="note-price">※教材費は月謝に含まれます。</p>
+                            </div> <!-- price-list-container" -->
+                        </div> <!-- day-content-block -->
+
+                        <!-- レッスンスケジュール -->
+                        <section id="schedule">
+                            <div class="wrapper-m">
+                                <!-- 昼:スケジュール -->
+                                <div class="day-content-block">
+                                    <h2 class="section-title heading-schedule">レッスンスケジュール</h2>
+                                    <div class="schedule-table">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>曜日</th>
+                                                    <th>時間</th>
+                                                    <th>コース</th>
+                                                    <th>対象</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>月曜日</td>
+                                                    <td>15:00 - 16:30</td>
+                                                    <td>子供向け 初級コース</td>
+                                                    <td>小学生</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>火曜日</td>
+                                                    <td>17:00 - 18:30</td>
+                                                    <td>子供向け 発表会コース</td>
+                                                    <td>中学生</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>水曜日</td>
+                                                    <td>10:00 - 12:00</td>
+                                                    <td>大人向け 趣味コース</td>
+                                                    <td>高校生以上</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>木曜日</td>
+                                                    <td>15:00 - 16:30</td>
+                                                    <td>子供向け 初級コース</td>
+                                                    <td>小学生</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>金曜日</td>
+                                                    <td>18:00 - 20:00</td>
+                                                    <td>大人向け プロ養成コース</td>
+                                                    <td>高校生以上</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>土曜日</td>
+                                                    <td>10:00 - 11:30</td>
+                                                    <td>子供向け 初級コース</td>
+                                                    <td>幼児〜小学生</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>土曜日</td>
+                                                    <td>13:00 - 14:30</td>
+                                                    <td>子供向け 発表会コース</td>
+                                                    <td>小学生〜中学生</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>日曜日</td>
+                                                    <td>10:00 - 12:00</td>
+                                                    <td>大人向け 趣味コース</td>
+                                                    <td>高校生以上</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="schedule-note">※&nbsp;祝日は休講となります。振替レッスンについてはお問い合わせください。</p>
+                                    </div> <!-- schedule-table -->
+                                </div> <!-- day-content-block -->
+
+                                <!-- マジックグッズ販売（昼のみ） -->
+                                <section id="goods" class="day-content-block">
+                                    <div class="wrapper-m">
+                                        <div class="goods-title-area">
+                                            <h2 class="section-title heading-lesson">マジックグッズ&nbsp;ショップ</h2>
+
+                                            <!-- カート確認ボタン -->
+                                            <button class="cart-check-btn">
+                                                <span class="cart-icon">🛒</span>
+                                                <span class="cart-text">&nbsp;カート&nbsp;</span>
+                                                <span class="cart-count">0</span>
+                                            </button>
+                                        </div> <!-- goods-title-area -->
+
+                                        <p class="key-message">プロも使う本格マジックグッズ</p>
+
+                                        <div class="goods-list">
+
+                                            <!-- ================= 商品01 ================= -->
+                                            <div class="goods-item">
+                                                <img src="./images/g1.jpg" width="300" height="300" alt="プロカードデック">
+                                                <div class="goods-info">
+                                                    <h4>マジックラボ・プロカードデック</h4>
+                                                    <div class="goods-tags">
+                                                        <span class="tag tag-recommend">おすすめ</span>
+                                                    </div>
+                                                    <p class="price">¥5,500</p>
+                                                    <p class="goods-desc">プロマジシャンも使用する高品質のカードデック。</p>
+                                                    <ul class="goods-features">
+                                                        <li>滑りが良くカード操作がしやすい</li>
+                                                        <li>ローズアップマジックに最適</li>
+                                                        <li>マジックラボ・マスコットキャラクター・オリジナルデック</li>
+                                                    </ul>
+                                                    <div class="goods-actions">
+                                                        <button class="cart-btn">カートに入れる</button>
+                                                        <div class="heart" data-id="goods01">♥</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- ================= 商品02 ================= -->
+                                            <div class="goods-item">
+                                                <img src="./images/g3.jpg" width="300" height="300" alt="インビジブルスレッド">
+                                                <div class="goods-info">
+                                                    <h4>インビジブル・スレッド</h4>
+                                                    <div class="goods-tags">
+                                                        <span class="tag tag-beginner">初心者向け</span>
+                                                    </div>
+                                                    <p class="price">¥1,800</p>
+                                                    <p class="goods-desc">物が浮いて見える幻想的な演出ができる道具。</p>
+                                                    <ul class="goods-features">
+                                                        <li>非常に細く観客に見えにくい</li>
+                                                        <li>近距離マジックで効果的</li>
+                                                        <li>基本的な浮遊演出に最適</li>
+                                                    </ul>
+                                                    <div class="goods-actions">
+                                                        <button class="cart-btn">カートに入れる</button>
+                                                        <div class="heart" data-id="goods02">♥</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- ================= 商品03 ================= -->
+                                            <div class="goods-item">
+                                                <img src="./images/g2.jpg" width="300" height="300" alt="コインマジックセット">
+                                                <div class="goods-info">
+                                                    <h4>コインマジックセット</h4>
+                                                    <div class="goods-tags">
+                                                    </div>
+                                                    <p class="price">¥4,200</p>
+                                                    <p class="goods-desc">定番コインマジックをすぐに始められるセット。</p>
+                                                    <ul class="goods-features">
+                                                        <li>消失・移動など基本技が可能</li>
+                                                        <li>専用コインで演技が安定</li>
+                                                        <li>初心者の練習用にも最適</li>
+                                                    </ul>
+                                                    <div class="goods-actions">
+                                                        <button class="cart-btn">カートに入れる</button>
+                                                        <div class="heart" data-id="goods03">♥</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- ================= 商品04 ================= -->
+                                            <div class="goods-item">
+                                                <img src="./images/g4.jpg" width="300" height="300" alt="カップ＆ボール">
+                                                <div class="goods-info">
+                                                    <h4>カップ＆ボール</h4>
+                                                    <div class="goods-tags">
+                                                    </div>
+                                                    <p class="price">¥5,500</p>
+                                                    <p class="goods-desc">世界最古のクラシックマジックセット。</p>
+                                                    <ul class="goods-features">
+                                                        <li>観客の目の前で不思議な現象</li>
+                                                        <li>演技構成の幅が広い</li>
+                                                        <li>ステージマジックに最適</li>
+                                                    </ul>
+                                                    <div class="goods-actions">
+                                                        <button class="cart-btn">カートに入れる</button>
+                                                        <div class="heart" data-id="goods04">♥</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- ================= 商品05 ================= -->
+                                            <div class="goods-item">
+                                                <img src="./images/g5.jpg" width="300" height="300" alt="シルクハンカチセット">
+                                                <div class="goods-info">
+                                                    <h4>シルクハンカチセット</h4>
+                                                    <div class="goods-tags">
+                                                        <span class="tag tag-beginner">初心者向け</span>
+                                                    </div>
+                                                    <p class="price">¥5,000</p>
+                                                    <p class="goods-desc">色の変化や出現演出ができる定番アイテム。</p>
+                                                    <ul class="goods-features">
+                                                        <li>視覚的に分かりやすい</li>
+                                                        <li>複数色で演出が可能</li>
+                                                        <li>初心者でも扱いやすい</li>
+                                                    </ul>
+                                                    <div class="goods-actions">
+                                                        <button class="cart-btn">カートに入れる</button>
+                                                        <div class="heart" data-id="goods05">♥</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- ================= 商品06 ================= -->
+                                            <div class="goods-item">
+                                                <img src="./images/g6.jpg" width="300" height="300" alt="マジックワンド">
+                                                <div class="goods-info">
+                                                    <h4>マジックワンド</h4>
+                                                    <div class="goods-tags">
+                                                    </div>
+                                                    <p class="price">¥10,000</p>
+                                                    <p class="goods-desc">マジシャンの象徴とも言える演出アイテム。</p>
+                                                    <ul class="goods-features">
+                                                        <li>演技の流れを作りやすい</li>
+                                                        <li>視線誘導に効果的</li>
+                                                        <li>ステージ演出に最適</li>
+                                                    </ul>
+                                                    <div class="goods-actions">
+                                                        <button class="cart-btn">カートに入れる</button>
+                                                        <div class="heart" data-id="goods06">♥</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- ================= 商品07 ================= -->
+                                            <div class="goods-item">
+                                                <img src="./images/g7.jpg" width="300" height="300" alt="フォームボール">
+                                                <div class="goods-info">
+                                                    <h4>フォームボール</h4>
+                                                    <div class="goods-tags">
+                                                        <span class="tag tag-recommend">おすすめ</span>
+                                                        <span class="tag tag-beginner">初心者向け</span>
+                                                    </div>
+                                                    <p class="price">¥5,000</p>
+                                                    <p class="goods-desc">手の中で増える驚きの定番マジック。</p>
+                                                    <ul class="goods-features">
+                                                        <li>柔らかく隠しやすい</li>
+                                                        <li>観客参加型の演出が可能</li>
+                                                        <li>盛り上がりやすい</li>
+                                                    </ul>
+                                                    <div class="goods-actions">
+                                                        <button class="cart-btn">カートに入れる</button>
+                                                        <div class="heart" data-id="goods07">♥</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- ================= 商品08 ================= -->
+                                            <div class="goods-item">
+                                                <img src="./images/logokyeset.jpg" width="300" height="300" alt="バッジ">
+                                                <div class="goods-info">
+                                                    <h4>神グループ&amp;マジックラボ・バッジ2点セット</h4>
+                                                    <div class="goods-tags">
+                                                    </div>
+                                                    <p class="price">¥4,000</p>
+                                                    <p class="goods-desc">神グループ&amp;マジックラボ・バッジセット。</p>
+                                                    <ul class="goods-features">
+                                                        <li>神グループのロゴマーク</li>
+                                                        <li>🐰ウサギのルーナ（Luna）と</li>
+                                                        <li>🐱ネコのトリック（Trick）が可愛い</li>
+                                                    </ul>
+                                                    <div class="goods-actions">
+                                                        <button class="cart-btn">カートに入れる</button>
+                                                        <div class="heart" data-id="goods08">♥</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- ================= 商品09 ================= -->
+                                            <div class="goods-item">
+                                                 <img src="./images/Jgrouplogokye.jpg" width="500" height="300" alt="キーホルダー">
+                                                <div class="goods-info">
+                                                    <h4>神グループ・キーホルダー</h4>
+                                                    <div class="goods-tags">
+                                                        <span class="tag tag-recommend">おすすめ</span>
+                                                    </div>
+                                                    <p class="price">¥2,300</p>
+                                                    <p class="goods-desc">神グループ・オリジナルキーホルダー</p>
+                                                    <ul class="goods-features">
+                                                        <li>神グループ公式サイト限定商品です</li>
+                                                        <li>ブラックのオリジナルキーボルダー</li>
+                                                        <li></li>
+                                                    </ul>
+                                                    <div class="goods-actions">
+                                                        <button class="cart-btn">カートに入れる</button>
+                                                        <div class="heart" data-id="goods09">♥</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- ================= 商品10 ================= -->
+                                            <div class="goods-item">
+                                                <img src="./images/labologokye.jpg" width="300" height="300" alt="キーホルダー">
+                                                <div class="goods-info">
+                                                    <h4>マジックラボ・キーホルダー</h4>
+                                                    <div class="goods-tags">
+                                                        <span class="tag tag-recommend">おすすめ</span>
+                                                    </div>
+                                                    <p class="price">¥2,000</p>
+                                                    <p class="goods-desc">マジックラボJINのキャラクターキーホルダー</p>
+                                                    <ul class="goods-features">
+                                                        <li>🐰ウサギのルーナ（Luna）と🐱ネコのトリック（Trick）</li>
+                                                        <li>遊び心と不思議が詰まった公式マスコット</li>
+                                                        <li>大人気キャラクターの限定グッズです</li>
+                                                    </ul>
+                                                    <div class="goods-actions">
+                                                        <button class="cart-btn">カートに入れる</button>
+                                                        <div class="heart" data-id="goods10">♥</div>
+                                                    </div>
+                                                </div> <!-- goods-info -->
+                                            </div> <!-- goods-item -->
+                                        </div> <!-- goods-list -->
+
+                                        <p class="schedule-note">※&nbsp;本課題はUI/UX設計の学習を目的としており、実際の決済機能は実装していません。</p>
+
+                                    </div> <!-- wrapper-m -->
+                                </section> <!-- id="goods" class="day-content-block -->
+
+                                <!-- マジックグッズ販売ここまで -->
+
+                                <!-- ランチメニュー紹介 (昼のみ) -->
+                                <section id="lunch" class="day-content-block">
+                                    <div class="wrapper-m daybg-02">
+                                        <h2 class="section-title heading-lunch">カフェ・ランチ営業</h2>
+                                        <h3>ドリンクメニュー</h3>
+                                        <div class="lunch-menu-grid">
+                                            <div class="lunch-item">
+                                                <img src="./images/Drink01.jpg" width="400" height="400" alt="紅茶">
+                                                <h4>フルーツティー</h4>
+                                                <p>お好みのフレーバーをお選びいだだけるフルーツティ</p>
+                                                <p class="price">¥500</p>
+                                            </div>
+                                            <div class="lunch-item">
+                                                <img src="./images/Drink02.jpg" width="400" height="400" alt="オレンジジュース">
+                                                <h4>ブラッドオレンジジュース</h4>
+                                                <p>フレッシュな生しぼりのオレンジジュースです</p>
+                                                <p class="price">¥500</p>
+                                            </div>
+                                            <div class="lunch-item">
+                                                <img src="./images/Drink03.jpg" width="400" height="400" alt="ジュース">
+                                                <h4>フレッシュジュース</h4>
+                                                <p>季節のフルーツジュース</p>
+                                                <p class="price">¥600</p>
+                                            </div>
+                                        </div> <!-- lunch-menu-grid -->
+
+                                        <h3>ランチメニュー</h3>
+                                        <div class="lunch-menu-grid">
+                                            <div class="lunch-item">
+                                                <img src="./images/food11.jpeg" width="400" height="400" alt="パスタランチ">
+                                                <h4>本日のパスタ</h4>
+                                                <p>シェフ特製パスタ・サラダ・ドリンク付き</p>
+                                                <p class="price">¥1,500</p>
+                                            </div>
+                                            <div class="lunch-item">
+                                                <img src="./images/food03.jpeg" width="400" height="400"
+                                                    alt="サンドイッチセット">
+                                                <h4>サンドイッチセット</h4>
+                                                <p>ボリューム満点サンドイッチ・スープ・ドリンク付き</p>
+                                                <p class="price">¥1,500</p>
+                                            </div>
+                                            <div class="lunch-item">
+                                                <img src="./images/food01.jpeg" width="400" height="400"
+                                                    alt="じゃがいものニョッキ">
+                                                <h4>ニョッキ・トマトソース</h4>
+                                                <p>ニョッキのトマトソース・サラダ・ドリンク付き</p>
+                                                <p class="price">¥1,500</p>
+                                            </div>
+                                        </div> <!-- lunch-menu-grid -->
+
+
+                                        <h3>スイーツ</h3>
+                                        <h4>ケーキセット（お好きなドリンクとセット） ￥1,900</h4>
+                                        <p class="cakeset">本日のスイーツはスタッフがご案内いたします</p>
+                                        <div class="cake-image-container"></div>
+                                        <img src="./images/drinkset.jpg" width="1000" height="250" alt="#X">
+                                    </div> <!-- wrapper-m daybg-02 -->
+                                </section>
+
+
+
+
+                                <!-- 夜キャッチコピー -->
+                                <div class="night-content-block hidden">
+                                    <div class="hero-caption">
+                                        <h3 class="en">Experience The Miracle</h3>
+                                        <h2>日常を忘れる一夜の魔法</h2>
+                                        <h2>クローズアップマジックショー開催!</h2>
+                                        <p>『JIN』でしか出会えない、五感を揺さぶる魔法の時間。</p>
+                                        <p>目の前で起こる奇跡、指先から始まる感動をあなたへ</p>
+                                    </div>
+                                </div> <!-- night-content-block hidden -->
+
+
+                                <!-- 夜バーの予約ボタン -->
+                                <section class="night-content-block hidden reserve-cta">
+                                    <div class="wrapper-m nightbg-04">
+                                        <h2 class="cta-title">今夜の奇跡を予約する</h2>
+                                        <a href="#contact" class="button-cta-large">今すぐ座席を予約!</a>
+                                    </div>
+                                </section> <!-- night-content-block hidden reserve-cta -->
+
+
+                                <section id="concept" class="night-content-block hidden">
+                                    <div class="wrapper-m nightbg-04">
+                                        <h2 class="section-title">Concept</h2>
+                                        <p>神グループ株式会社が仕掛ける、紳士・淑女のための劇場型バー。</p>
+                                        <p>MagicBar&nbsp;Jinの美学と哲学が凝縮された秘密めいた舞台です。</p>
+                                        <p>JINは、ただのトリックを見せるのではなく、お客様一人ひとりの反応を読み取り、</p>
+                                        <p>その瞬間に合わせた「あなただけの奇跡」を創造します。</p>
+                                        <p>彼の洗練された指先の芸術は選りすぐりのカクテルと共に、日常の論理を優雅に裏切ります。</p>
+                                        <p>知的好奇心を満たす上質なエンターテイメントを最もエレガントな空間で。</p>
+                                        <p>この夜、JINの手の中で、あなたの世界観は書き換えられるでしょう。</p>
+                                        <p>特別な感動を求める大人のための隠された特等席です。</p>
+
+                                        <div class="points-grid">
+                                            <div class="point-item"><strong>🎩 プロの奇跡体験</strong></div>
+                                            <div class="point-item"><strong>✨ 洗練された空間</strong></div>
+                                            <div class="point-item"><strong>🍸 特別なカクテル</strong></div>
+                                        </div>
+                                    </div> <!-- wrapper-m nightbg-04 -->
+                                </section> <!-- id="concept" class="night-content-block hidden -->
+
+                                <!-- マジックショー (夜のみ) -->
+                                <section id="show" class="night-content-block hidden">
+                                    <div class="wrapper-m nightbg-03">
+                                        <h2 class="section-title">Magic Show</h2>
+                                        <div class="show-info">
+                                            <h3>目の前で繰り広げられる奇跡</h3>
+                                            <p>プロマジシャンによる至近距離でのマジックショーを毎晩開催。</p>
+                                            <p>カードやコイン、日常の小物が目の前で奇跡を起こします。</p>
+                                            <div class="show-times">
+                                                <div class="show-time-item">
+                                                    <h3>1st ショー</h3>
+                                                    <p class="time">20:00 - 20:45</p>
+                                                </div>
+                                                <div class="show-time-item">
+                                                    <h3>2nd ショー</h3>
+                                                    <p class="time">22:00 - 22:45</p>
+                                                </div>
+                                            </div>
+                                        </div> <!-- show-info -->
+                                    </div><!-- wrapper-m nightbg-03 -->
+                                </section> <!-- show -->
+
+
+                                <!-- マジシャン紹介 (夜) -->
+                                <div id="magician" class="night-content-block hidden nightbg-03">
+                                    <h2 class="section-title">Magician</h2>
+                                    <p class="cast-desc">今夜の奇跡を演出する、プロのマジシャンをご紹介します。</p>
+                                    <p>総勢20名のマジシャンが日替わりで出演!</p>
+                                    <div class="cast-cards">
+                                        <div class="cast-card">
+                                            <img src="./images/magician1.jpg" width="400" height="400" alt="マジシャン1">
+                                            <h4>The Great Hiro</h4>
+                                            <p>国際マジック大会優勝。カードマジックの鬼才。</p>
+                                            <div class="heart" data-id="magician01">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician2.jpg" width="400" height="400" alt="マジシャン2">
+                                            <h4>Luna the Mysterious</h4>
+                                            <p>メンタルマジックの女王。心を読む技術が圧巻。</p>
+                                            <div class="heart" data-id="magician02">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician3.jpg" width="400" height="400" alt="マジシャン3">
+                                            <h4>Magic Master Ken</h4>
+                                            <p>コインマジックの達人。指先から奇跡を生む。</p>
+                                            <div class="heart" data-id="magician03">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician4.jpg" width="400" height="400" alt="マジシャン4">
+                                            <h4>Sakura the Illusionist</h4>
+                                            <p>テレビ出演多数。観客参加型マジックが人気。</p>
+                                            <div class="heart" data-id="magician04">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician5.jpg" width="400" height="400" alt="マジシャン5">
+                                            <h4>Amazing Norika</h4>
+                                            <p>美しいイリュージョンが魅力。幻想的な世界へ誘う。</p>
+                                            <div class="heart" data-id="magician05">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician6.jpg" width="400" height="400" alt="マジシャン6">
+                                            <h4>Mystic George</h4>
+                                            <p>予言マジック専門。未来を当てる驚異の技。</p>
+                                            <div class="heart" data-id="magician06">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician7.jpg" width="400" height="400" alt="マジシャン7">
+                                            <h4>Flash Yuki</h4>
+                                            <p>スピードマジックの鬼。一瞬で変わる世界。</p>
+                                            <div class="heart" data-id="magician07">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician8.jpg" width="400" height="400" alt="マジシャン8">
+                                            <h4>Elegant Marie</h4>
+                                            <p>フランス仕込みの優雅なマジック。芸術的な演出。</p>
+                                            <div class="heart" data-id="magician08">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician9.jpg" width="400" height="400" alt="マジシャン9">
+                                            <h4>Clown Shinji</h4>
+                                            <p>クラウンマジックの第一人者。伝統と革新の融合。</p>
+                                            <div class="heart" data-id="magician09">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician10.jpg" width="400" height="400" alt="マジシャン10">
+                                            <h4>Wonder Rina</h4>
+                                            <p>若手No.1。SNSで話題のクリエイティブマジック。</p>
+                                            <div class="heart" data-id="magician10">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician11.jpg" width="400" height="400" alt="マジシャン11">
+                                            <h4>Professor Magic</h4>
+                                            <p>マジック理論の専門家。不可能を可能にする。</p>
+                                            <div class="heart" data-id="magician11">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician12.jpg" width="400" height="400" alt="マジシャン12">
+                                            <h4>Shadow Kai</h4>
+                                            <p>影を操るマジック。光と影の芸術。</p>
+                                            <div class="heart" data-id="magician12">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician13.jpg" width="400" height="400" alt="マジシャン13">
+                                            <h4>Crystal Naoya</h4>
+                                            <p>ジャグリングの魔術師。笑いと感動をお届け。</p>
+                                            <div class="heart" data-id="magician13">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician14.jpg" width="400" height="400" alt="マジシャン14">
+                                            <h4>Thunder Joe</h4>
+                                            <p>ダイナミックなステージマジック。迫力満点。</p>
+                                            <div class="heart" data-id="magician14">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician15.jpg" width="400" height="400" alt="マジシャン15">
+                                            <h4>Crown Haruka</h4>
+                                            <p>癒しのクラウン・パントマイム。心温まる演出が特徴。</p>
+                                            <div class="heart" data-id="magician15">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician16.jpg" width="400" height="400" alt="マジシャン16">
+                                            <h4>Wild Masato</h4>
+                                            <p>危険なマジックに挑戦。スリル満点のパフォーマンス。</p>
+                                            <div class="heart" data-id="magician16">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician17.jpg" width="400" height="400" alt="マジシャン17">
+                                            <h4>Sweet Yui</h4>
+                                            <p>可愛らしい演出が魅力。キュートなマジック。</p>
+                                            <div class="heart" data-id="magician17">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician18.jpg" width="400" height="400" alt="マジシャン18">
+                                            <h4>Beauty Ruru</h4>
+                                            <p>美的な世界観。ビューティーマジックの第一人者。</p>
+                                            <div class="heart" data-id="magician18">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician19.jpg" width="400" height="400" alt="マジシャン19">
+                                            <h4>Bright Sora</h4>Price List
+                                            <p>明るく楽しいマジック。笑顔と驚きを届ける。</p>
+                                            <div class="heart" data-id="magician19">♥</div>
+                                        </div>
+                                        <div class="cast-card">
+                                            <img src="./images/magician20.jpg" width="400" height="400" alt="マジシャン20">
+                                            <h4>Sora&amp;Kaze</h4>
+                                            <p>可愛い姉妹マジシャン。若さが魅力のアイドルマジシャン。</p>
+                                            <div class="heart" data-id="magician20">♥</div>
+                                        </div>
+                                    </div> <!-- cast-cards -->
+                                </div> <!-- night-content-block hidden nightbg-03 -->
+                            </div> <!-- wrapper-m -->
+                        </section> <!-- cast -->
+
+                        <!-- 夜:飲食メニュー -->
+                        <div class="night-content-block hidden">
+                            <h2 class="section-title">Price List</h2>
+
+                            <h3 class="menu-category">カクテル&emsp;&emsp;Cocktails</h3>
+                            <div class="cocktail-image-container"></div>
+                            <div class="menu-grid-3col">
+                                <div class="menu-item">
+                                    <img src="./images/cocktail1.jpg" width="400" height="400" alt="マジシャンズ・スペシャル"
+                                        class="menu-item-image">
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-name">マジシャンズ・スペシャル</div>
+                                        <div class="menu-item-description">
+                                            紫と金が織りなす魔法のカクテル。神秘的なスモークエフェクトと金箔の輝きが特別な夜を演出します。</div>
+                                        <div class="menu-item-price">¥2,500</div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img src="./images/cocktail2.jpg" width="400" height="400" alt="ミステリアス・ブルー"
+                                        class="menu-item-image">
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-name">ミステリアス・ブルー</div>
+                                        <div class="menu-item-description">深い青色のマティーニグラスに蝶のような青い花が神秘的なカクテル。
+                                        </div>
+                                        <div class="menu-item-price">¥1,800</div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img src="./images/cocktail3.jpg" width="400" height="400" alt="イリュージョン・レッド"
+                                        class="menu-item-image">
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-name">イリュージョン・レッド</div>
+                                        <div class="menu-item-description">鮮やかなルビーレッドのラズベリーと輝く粉が華やかな魔法の芸術的なカクテル。</div>
+                                        <div class="menu-item-price">¥2,000</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="menu-category">ウイスキー&emsp;&emsp;Whiskey</h3>
+                            <div class="menu-grid-3col">
+                                <div class="menu-item">
+                                    <img src="./images/Drink01.jpg" width="400" height="400" alt="プレミアムウイスキー"
+                                        class="menu-item-image">
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-name">プレミアムウイスキー各種</div>
+                                        <div class="menu-item-description">厳選されたプレミアムウイスキーコレクション。クリスタルグラスで楽しむ至高の一杯。
+                                        </div>
+                                        <div class="menu-item-price">¥2,200〜</div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img src="./images/Drink05.jpg" width="400" height="400" alt="スタンダードウイスキー"
+                                        class="menu-item-image">
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-name">スタンダードウイスキー各種</div>
+                                        <div class="menu-item-description">定番の銘柄から選べるスタンダードウイスキー。気軽に楽しめる本格派。</div>
+                                        <div class="menu-item-price">¥2,000〜</div>
+                                    </div>
+                                </div>
+                            </div> <!-- menu-grid-3col -->
+
+                            <h3 class="menu-category">前菜&emsp;&emsp;Appetizers</h3>
+                            <div class="menu-grid-3col">
+                                <div class="menu-item">
+                                    <img src="./images/food05.jpeg" width="400" height="400" alt="本日の前菜盛り合わせ"
+                                        class="menu-item-image">
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-name">本日の前菜盛り合わせ</div>
+                                        <div class="menu-item-description">シェフが厳選した季節の食材を使った前菜の盛り合わせ。彩り豊かな一皿。</div>
+                                        <div class="menu-item-price">¥2,000</div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img src="./images/food02.jpeg" width="400" height="400" alt="生ハムとチーズの盛り合わせ"
+                                        class="menu-item-image">
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-name">生ハムとチーズの盛り合わせ</div>
+                                        <div class="menu-item-description">上質な生ハムと厳選チーズ、フルーツやナッツを添えた贅沢な一皿。</div>
+                                        <div class="menu-item-price">¥2,500</div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img src="./images/food07.jpeg" width="400" height="400" alt="カルパッチョ"
+                                        class="menu-item-image">
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-name">カルパッチョ</div>
+                                        <div class="menu-item-description">新鮮な魚介を薄くスライスし、特製ソースで仕上げた前菜。</div>
+                                        <div class="menu-item-price">¥2,500</div>
+                                    </div>
+                                </div>
+                            </div> <!-- menu-grid-3col -->
+
+                            <h3 class="menu-category">メイン&emsp;&emsp;Main Dishes</h3>
+                            <div class="menu-grid-3col">
+                                <div class="menu-item">
+                                    <img src="./images/food10.jpeg" width="400" height="400" alt="和牛ステーキ"
+                                        class="menu-item-image">
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-name">和牛ステーキ</div>
+                                        <div class="menu-item-description">最高級の和牛を完璧に焼き上げた逸品。ジューシーで柔らかな食感をお楽しみください。
+                                        </div>
+                                        <div class="menu-item-price">¥5,500</div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img src="./images/food11.jpeg" width="400" height="400" alt="シーフードパスタ"
+                                        class="menu-item-image">
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-name">シーフードパスタ</div>
+                                        <div class="menu-item-description">新鮮な海の幸をふんだんに使った特製パスタ。</div>
+                                        <div class="menu-item-price">¥2,500</div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <img src="./images/food09.jpeg" width="400" height="400" alt="ピザ"
+                                        class="menu-item-image">
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-name">マルゲリータピザ</div>
+                                        <div class="menu-item-description">トマトソース、モッツァレラチーズ、バジルをトッピングしたピザ</div>
+                                        <div class="menu-item-price">¥2,500</div>
+                                    </div>
+                                </div>
+                            </div> <!-- menu-grid-3col -->
+
+                            <h3 class="menu-category">コース&emsp;&emsp;Course Menu</h3>
+                            <div class="menu-grid-3col">
+                                <div class="menu-item">
+                                    <img src="./images/food-cose3.jpeg" width="200" height="450" alt="マジックナイト・ライトコース"
+                                        class="menu-item-image-course">
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-name">マジックナイト・ライトコース</div>
+                                        <div class="menu-item-description">前菜 + ドリンク2杯 + マジックチャージ</div>
+                                        <div class="menu-item-price">¥5,000</div>
+                                    </div> <!-- menu-item-content -->
+                                </div> <!-- menu-item -->
+
+                                <div class="menu-item">
+                                    <img src="./images/food-cose2.jpeg" width="200" height="450" alt="マジックナイト・スタンダード"
+                                        class="menu-item-image-course">
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-name">マジックナイト・スタンダード</div>
+                                        <div class="menu-item-description">前菜 + メイン + ドリンク2杯 + マジックチャージ</div>
+                                        <div class="menu-item-price">¥8,000</div>
+                                    </div> <!-- menu-item-content -->
+                                </div> <!-- menu-item -->
+                                <div class="menu-item">
+                                    <img src="./images/food-cose1.jpeg" width="200" height="450" alt="マジックナイト・プレミアム"
+                                        class="menu-item-image-course">
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-name">マジックナイト・プレミアム</div>
+                                        <div class="menu-item-description">前菜 + メイン + デザート + ドリンク3杯 + マジックチャージ</div>
+                                        <div class="menu-item-price">¥12,000</div>
+                                    </div> <!-- menu-item-content -->
+                                </div> <!-- menu-item -->
+                            </div> <!-- menu-grid-3col -->
+
+                            <p class="note-price">※マジックチャージ ¥3,000（テーブルごと）が含まれます。</p>
+                            <p class="note-price">※表示価格はすべて税別です。</p>
+                        </div> <!-- night-content-block hidden -->
+                    </div> <!-- wrapper-m -->
+                </section> <!-- menu -->
+                <hr>
+
+
+
+                <!-- 夜:営業時間 -->
+                <div class="night-content-block hidden">
+                    <h2 class="section-title">Schedule</h2>
+                    <div class="schedule-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>曜日</th>
+                                    <th>営業時間</th>
+                                    <th>ショータイム</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>月曜日 - 木曜日</td>
+                                    <td>18:00 - 24:00</td>
+                                    <td>20:00 / 22:00</td>
+                                </tr>
+                                <tr>
+                                    <td>金曜日 - 土曜日</td>
+                                    <td>18:00 - 26:00</td>
+                                    <td>20:00 / 22:00 / 24:00</td>
+                                </tr>
+                                <tr>
+                                    <td>日曜日・祝日</td>
+                                    <td>休業</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="schedule-note">※完全予約制。ご予約はお電話またはウェブサイトから</p>
+                    </div>
+                </div> <!-- night-content-block hidden -->
+                <hr>
+            </div><!-- wrapper-m -->
+        </section> <!-- schedule -->
+        
+
+
+
+        <!-- 昼アクセス -->
+        <section id="access" <section id="access" class="day-content-block">
+            <div class="wrapper-m">
+                <h2 class="section-title heading-access en">店舗情報</h2>
+
+                <div class="contact-container">
+                    <!-- 銀座店 -->
+                    <div class="contact-card">
+                        <h3 class="contact-title">銀座店</h3>
+                        <img src="./images/ginza.jpeg" width="600" height="400" alt="銀座店" class="shop-image">
+                        <p class="contact-address">〒104-0061<br>東京都中央区銀座5-1</p>
+                        <p class="contact-phone">TEL: 03-1234-5678</p>
+                        <p class="contact-hours">営業時間: 10:00-22:00<br>定休日: 水曜日</p>
+                        <div class="map-wrap">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2571389579774!2d139.76232931525846!3d35.671236580197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQwJzE2LjQiTiAxMznCsDQ1JzQ4LjUiRQ!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp"
+                                allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- 渋谷店 -->
+                    <div class="contact-card">
+                        <h3 class="contact-title">渋谷店</h3>
+                        <img src="./images/shibuya.jpeg" width="600" height="400" alt="渋谷店" class="shop-image">
+                        <p class="contact-address">〒150-0002<br>東京都渋谷区渋谷2-2</p>
+                        <p class="contact-phone">TEL: 03-2345-6789</p>
+                        <p class="contact-hours">営業時間: 10:00-22:00<br>定休日: 火曜日</p>
+                        <div class="map-wrap">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5!2d139.7!3d35.66!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDM5JzM2LjAiTiAxMznCsDQyJzAwLjAiRQ!5e0!3m2!1sja!2sjp!4v1234567890124!5m2!1sja!2sjp"
+                                allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- 青山店 -->
+                    <div class="contact-card">
+                        <h3 class="contact-title">青山店</h3>
+                        <img src="./images/aoyama.jpeg" width="600" height="400" alt="青山店" class="shop-image">
+                        <p class="contact-address">〒107-0062<br>東京都港区南青山3-8</p>
+                        <p class="contact-phone">TEL: 03-3456-7890</p>
+                        <p class="contact-hours">営業時間: 18:00-26:00<br>定休日: 日曜日</p>
+                        <div class="map-wrap">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.8!2d139.72!3d35.67!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQwJzEyLjAiTiAxMznCsDQzJzEyLjAiRQ!5e0!3m2!1sja!2sjp!4v1234567890125!5m2!1sja!2sjp"
+                                allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div> <!-- contact-container -->
+            </div> <!-- wrapper-m -->
+        </section> <!-- access -->
+
+
+        <!-- 夜アクセス -->
+        <section id="access-night" class="night-content-block hidden">
+            <div class="wrapper-m">
+                <h2 class="section-title heading-access en">Store Information</h2>
+
+                <div class="contact-container">
+                    <!-- 銀座店 -->
+                    <div class="contact-card">
+                        <h3 class="contact-title">銀座店</h3>
+                        <img src="./images/ginza_night.jpeg" width="600" height="400" alt="銀座店" class="shop-image">
+                        <p class="contact-address">〒104-0061<br>東京都中央区銀座5-1</p>
+                        <p class="contact-phone">TEL: 03-1234-5678</p>
+                        <p class="contact-hours">営業時間: 10:00-22:00<br>定休日: 水曜日</p>
+                        <div class="map-wrap">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2571389579774!2d139.76232931525846!3d35.671236580197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQwJzE2LjQiTiAxMznCsDQ1JzQ4LjUiRQ!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp"
+                                allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- 渋谷店 -->
+                    <div class="contact-card">
+                        <h3 class="contact-title">渋谷店</h3>
+                        <img src="./images/shibuya_night.jpeg" width="600" height="400" alt="渋谷店" class="shop-image">
+                        <p class="contact-address">〒150-0002<br>東京都渋谷区渋谷2-2</p>
+                        <p class="contact-phone">TEL: 03-2345-6789</p>
+                        <p class="contact-hours">営業時間: 10:00-22:00<br>定休日: 火曜日</p>
+                        <div class="map-wrap">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5!2d139.7!3d35.66!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDM5JzM2LjAiTiAxMznCsDQyJzAwLjAiRQ!5e0!3m2!1sja!2sjp!4v1234567890124!5m2!1sja!2sjp"
+                                allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- 青山店 -->
+                    <div class="contact-card">
+                        <h3 class="contact-title">青山店</h3>
+                        <img src="./images/aoyama_night.jpeg" width="600" height="400" alt="青山店" class="shop-image">
+                        <p class="contact-address">〒107-0062<br>東京都港区南青山1-1</p>
+                        <p class="contact-phone">TEL: 03-3456-7890</p>
+                        <p class="contact-hours">営業時間: 18:00-26:00<br>定休日: 日曜日</p>
+                        <div class="map-wrap">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.8!2d139.72!3d35.67!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQwJzEyLjAiTiAxMznCsDQzJzEyLjAiRQ!5e0!3m2!1sja!2sjp!4v1234567890125!5m2!1sja!2sjp"
+                                allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div> <!-- contact-container -->
+            </div> <!-- wrapper-m -->
+        </section> <!-- access -->
+
+
+        <!-- 会社概要 -->
+        <section id="company">
+            <div class="wrapper-s">
+                <h2 class="section-title en">Company Profile</h2>
+
+                <div class="company-info">
+                    <div class="info-row">
+                        <div class="info-label">会社名</div>
+                        <div class="info-content"><img src="./images/Jgrouplogo.png" width="32" height="32"
+                                alt="会社ロゴ">&nbsp;&nbsp;神グループ株式会社</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">代表取締役</div>
+                        <div class="info-content">神&nbsp;風太</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">設立</div>
+                        <div class="info-content">2010年4月1日</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">資本金</div>
+                        <div class="info-content">3,000万円</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">所在地</div>
+                        <div class="info-content">〒107-0062 東京都港区南青山1-1 青山ビル3F</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">事業内容</div>
+                        <div class="info-content">
+                            <div class="business-content">
+                                <div class="business-item">
+                                    <h4>1. マジックスクール事業</h4>
+                                    <p>子供から大人まで幅広い年齢層を対象としたマジックレッスンの提供。初級から上級、プロ養成コースまで多様なカリキュラムを展開。</p>
+                                </div>
+                                <div class="business-item">
+                                    <h4>2. マジックバー運営事業</h4>
+                                    <p>プロマジシャンによるクロースアップマジックショーを楽しめるバー「MagicBar&nbsp;Jin」の運営。上質な飲食とエンターテイメントの融合。</p>
+                                </div>
+                                <div class="business-item">
+                                    <h4>3. マジシャン派遣事業</h4>
+                                    <p>企業イベント、パーティー、ブライダル等へのプロマジシャン派遣サービス。お客様のニーズに合わせたオーダーメイドの演出を提供。</p>
+                                </div>
+                                <div class="business-item">
+                                    <h4>4. マジック用品販売事業</h4>
+                                    <p>初心者向けから上級者向けまで、幅広いマジック用品の販売。オンラインショップと実店舗での販売を展開。</p>
+                                </div>
+                            </div>
+                        </div> <!-- info-content -->
+                    </div> <!-- info-row -->
+                </div> <!-- wrapper-s -->
+            </div> <!-- company-info -->
+
+            <!-- 役員紹介を3人横並びに -->
+            <h3 class="section-title en">Our Leadership</h3>
+            <div class="executive-grid wrapper-m">
+                <div class="executive-card-grid">
+                    <img src="./images/ceo1.jpg" width="300" height="400" alt="代表取締役 神 風太" class="exec-photo-grid">
+                    <div class="exec-info-grid">
+                        <h4>代表取締役</h4>
+                        <p class="exec-name">神&nbsp;風太</p>
+                        <p class="exec-name-en">Huta Jin</p>
+                        <p class="exec-bio">マジック歴30年。国際マジック協会認定マジシャン。マジックの魅力を次世代に伝えることをミッションとし、教育とエンターテイメントの融合を追求。
+                        </p>
+                    </div>
+                </div>
+                <div class="executive-card-grid">
+                    <img src="./images/ceo2.jpg" width="300" height="400" alt="副社長 神 花子" class="exec-photo-grid">
+                    <div class="exec-info-grid">
+                        <h4>副社長</h4>
+                        <p class="exec-name">神&nbsp;華麗</p>
+                        <p class="exec-name-en">Karei Jin</p>
+                        <p class="exec-bio">
+                            メガバンクで10年間、主に法人営業部門を統括し、大規模プロジェクトを多数成功に導く。その後、現職に就任。経営戦略の策定と新規事業の立ち上げを主導。</p>
+                    </div>
+                </div>
+                <div class="executive-card-grid">
+                    <img src="./images//ceo3.jpg" width="300" height="400" alt="監査役 吉本 光" class="exec-photo-grid">
+                    <div class="exec-info-grid">
+                        <h4>監査役</h4>
+                        <p class="exec-name">吉本&nbsp;光</p>
+                        <p class="exec-name-en">Hikari Yoshimoto</p>
+                        <p class="exec-bio">
+                            大手金融機関にて10年間、主にリスク管理と内部監査部門に従事。退職後、現職の監査役に就任。就任後は、「内部統制強化プロジェクト」を主導し、独立した視点からガバナンス体制を再構築。
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- executive-grid wrapper-m -->
+        </section> <!-- cony -->
+
+
+        <!-- お問い合わせフォーム -->
+        <section id="contact">
+            <div class="wrapper-s">
+                <h2 class="section-title heading-contact-form">ご予約・お問い合わせ</h2>
+                <div class="contact-intro">
+                    <p class="day-content-block">無料体験レッスンのお申込みやご質問など、お気軽にお問い合わせください。</p>
+                    <p class="night-content-block hidden">MagicBar&nbsp;Jinのご予約・お問い合わせはこちらから</p>
+                    <p>特別な夜をご用意してお待ちしております。</p>
+                </div>
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" required placeholder="例: 神 風太">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required placeholder="例: info@kamigroup.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">電話番号</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="例: 03-1234-1234">
+                    </div>
+                    <div class="form-group day-content-block">
+                        <label for="course">ご希望のコース</label>
+                        <select id="course" name="course" required>
+                            <option value="">選択してください</option>
+                            <option value="kids-basic">子供向け&nbsp;初級コース</option>
+                            <option value="kids-presentation">子供向け&nbsp;発表会コース</option>
+                            <option value="adult-hobby">大人向け&nbsp;趣味コース</option>
+                            <option value="adult-pro">大人向け&nbsp;プロ養成コース</option>
+                        </select>
+                    </div>
+                    <div class="form-group night-content-block hidden">
+                        <label for="reservation-date">ご希望日時</label>
+                        <input type="datetime-local" id="reservation-date" name="reservation-date">
+                    </div>
+                    <div class="form-group night-content-block hidden">
+                        <label for="guests">ご人数</label>
+                        <input type="number" id="guests" name="guests" min="1" max="20" required placeholder="例: 1">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">お問い合わせ内容</label>
+                        <textarea id="message" name="message" rows="6" required
+                            placeholder="ご質問・ご要望などございましたら、お気軽にコメントしてください"></textarea>
+                    </div>
+                    <!-- ボタンを中央に配置 -->
+                    <div class="button-center">
+                        <button type="submit" class="button-submit">送信する</button>
+                    </div>
+                </form>
+            </div> <!-- wrapper-s -->
+        </section> <!-- contact -->
+
+
+        <!-- SNSリンク -->
+        <section id="sns" class="sns-section wrapper-s">
+            <h2 class="section-title">SNSで最新情報をチェック！</h2>
+            <p class="sns-comment">フォローすると限定イベントや最新マジック動画がすぐ見れます✨</p>
+
+            <div class="sns-icons">
+                <a href="https://www.facebook.com/" target="_blank" class="sns-icon">
+                    <img src="./images/Facebook_Logo_Primary.png" alt="Facebookアイコン">
+                    <span>いいね！して応援✨</span>
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank" class="sns-icon">
+                    <img src="./images/Instagram_Glyph_Gradient.png" alt="Instagramアイコン">
+                    <span>映え写真をチェック✨</span>
+                </a>
+            </div> <!-- sns-icons -->
+        </section> <!-- sns -->
+
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <div class="wrapper-l">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>マジックラボ&nbsp;Jin</h4>
+                    <ul>
+                        <li><a href="#school">スクール紹介</a></li>
+                        <li><a href="#course">レッスンコース</a></li>
+                        <li><a href="#cast">講師紹介</a></li>
+                        <li><a href="#menu">月謝料金</a></li>
+                        <li><a href="#schedule">スケジュール</a></li>
+                        <li><a href="#goods">グッズ</a></li>
+                        <li><a href="#lunch">ランチメニュー</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>MagicBar&nbsp;Jin</h4>
+                    <ul>
+                        <li><a href="#concept">コンセプト</a></li>
+                        <li><a href="#show">マジックショー</a></li>
+                        <li><a href="#magician">マジシャン紹介</a></li>
+                        <li><a href="#menu">メニュー</a></li>
+                        <li><a href="#schedule">営業時間</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>会社情報</h4>
+                    <ul>
+                        <li><a href="#company">会社概要</a></li>
+                        <li><a href="#access-night">アクセス</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                        <li><a href="#x">プライバシーポリシー</a></li>
+                        <li><a href="#x">特定商取引法に基づく表記</a></li>
+                        <li><a href="#x">利用規約</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>お問い合わせ</h4>
+                    <ul>
+                        <li>TEL:&nbsp;03-1234-5678</li>
+                        <li>Email:&nbsp;info@jin-group.jp</li>
+                        <li>営業時間:&nbsp;10:00&nbsp;-&nbsp;24:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025&nbsp;神グループ株式会社&nbsp;All Rights Reserved.</p>
+            </div>
+        </div> <!-- wrapper-l -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>
