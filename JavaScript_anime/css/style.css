@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+body {
+  background-image: url(../images/bkimg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* PC表示で綺麗にフィット */
+  min-height: 100vh;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #8B4513;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+/* 子どもたちのコンテナ */
+#container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px; /* 追加：上からの余白 */
+}
+
+/* 子どもたちのホバー効果 */
+.friend {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.friend:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.friend img {
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* 焼き芋のコンテナ */
+#container-imo {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 焼き芋の初期設定 */
+.potato {
+  position: absolute;
+  top: -5px;
+  opacity: 0;
+}
+
+.potato img {
+  display: block;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* 焼き芋の位置設定 */
+#imo1 { left: 10%; }
+#imo2 { left: 25%; }
+#imo3 { left: 40%; }
+#imo4 { left: 55%; }
+#imo5 { left: 75%; }
+
+/* ボタン */
+div.box {
+  text-align: center;
+  margin: 10px 0;
+}
+
+#btn {
+  width: 230px;
+  height: 50px;
+  font-size: 25px;
+  background-color: #FF6347;
+  color: white;
+  border: 3px solid #8B4513;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#btn:hover {
+  background-color: #FF4500;
+  transform: scale(1.1);
+}
+
+#btn:active {
+  transform: scale(0.95);
+}

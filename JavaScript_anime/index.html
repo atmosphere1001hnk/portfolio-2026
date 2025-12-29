@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>秋の味覚といえば焼き芋</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>秋の味覚</h1>
+
+  <!-- ボタン -->
+  <div class="box">
+    <button id="btn">スタート!</button>
+  </div>
+
+  <!-- 焼き芋のコンテナ -->
+  <div id="container-imo">
+    <div class="potato" id="imo1">
+      <img src="./images/imo1.png" width="80" height="60" alt="焼き芋">
+    </div>
+    <div class="potato" id="imo2">
+      <img src="./images/imo2.png" width="80" height="60" alt="焼き芋">
+    </div>
+    <div class="potato" id="imo3">
+      <img src="./images/imo4.png" width="80" height="60" alt="焼き芋">
+    </div>
+    <div class="potato" id="imo4">
+      <img src="./images/imo2.png" width="80" height="60" alt="焼き芋">
+    </div>
+    <div class="potato" id="imo5">
+      <img src="./images/imo1.png" width="80" height="60" alt="焼き芋">
+    </div>
+  </div>
+
+  <!-- 子どものコンテナ -->
+  <div id="container">
+    <div class="friend" id="kids1">
+      <img src="./images/01.png" width="130" height="200" alt="女の子" data-hover="./images/11.png">
+    </div>
+    <div class="friend" id="kids2">
+      <img src="./images/02.png" width="130" height="200" alt="女の子" data-hover="./images/12.png">
+    </div>
+    <div class="friend" id="kids3">
+      <img src="./images/03.png" width="130" height="200" alt="男の子" data-hover="./images/13.png">
+    </div>
+    <div class="friend" id="kids4">
+      <img src="./images/04.png" width="130" height="200" alt="男の子" data-hover="./images/14.png">
+    </div>
+    <div class="friend" id="kids5">
+      <img src="./images/05.png" width="130" height="200" alt="男の子" data-hover="./images/15.png">
+    </div>
+  </div> <!-- container -->
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <script>
+    $(function () {
+      // 焼き芋を落とすアニメーション
+      function dropPotato() {
+        $('.potato').each(function (index) {
+          const $potato = $(this);
+          const delay = index * 300; // 順番に落ちるように遅延
+          const duration = 2000 + Math.random() * 1000; // ランダムな速度
+
+          setTimeout(function () {
+            $potato.css('opacity', '1').animate({
+              top: '+=500',
+            }, {
+              duration: duration,
+              easing: 'linear',
+
+              complete: function () {
+                // アニメーション終了後、位置をリセット
+                $potato.css({
+                  top: '-100px',
+                  opacity: '0',
+                  transform: 'none'
+                });
+              }
+            });
+          }, delay);
+        });
+      }
+
+      // ボタンクリックで焼き芋を落とす
+      $('#btn').on('click', function () {
+        dropPotato();
+      });
+
+      // 子どもたちのホバー効果（画像切り替え）
+      $('.friend img').each(function () {
+        const $img = $(this);
+        const normalSrc = $img.attr('src');
+        const hoverSrc = $img.attr('data-hover');
+
+        $img.on('mouseenter', function () {
+          if (hoverSrc) {
+            $(this).attr('src', hoverSrc);
+          }
+        });
+
+        $img.on('mouseleave', function () {
+          $(this).attr('src', normalSrc);
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
