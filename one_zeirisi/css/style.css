@@ -1,0 +1,701 @@
+@charset "UTF-8";
+
+body{
+  font-family:
+  "Helvetica Neue",
+  Arial,
+  "Noto Sans JP",
+  "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans",
+  "BIZ UDPGothic",
+  Meiryo,
+  sans-serif;
+  background-color: #fff;
+}
+
+/* wrapperのスタイル */
+div.wrapper{
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;  /* ブロック要素を親要素の中で水平方向（左右）の中央配置 width設定必須 100%NG  */
+}
+
+/* mainのスタイル */
+main{
+  width: 100%;
+}
+
+.main ul li,
+.form-group,
+.privacy-policy-box,
+.consent-check{
+  padding: 10px 50px;
+}
+
+/* フッターのスタイル */
+.address-map,
+.foot-nav{
+  width: 1100px;
+}
+
+/* フォントサイズ変更 */
+h1{
+  padding: 30px 0 50px 30px;
+}
+
+h1 a{
+  font-size: 25px;
+  color: #212121;
+  font-weight: bold;
+}
+
+/* h1のspan文字サイズ変更 */
+span.fontsize{
+  font-size: 18px;
+  align-items: cente;
+}
+
+h2{
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);  /* 文字の影 */
+  text-align: center;
+  background-color: #103778;
+  padding: 8px 0;
+}
+
+/* h2の上部余白変更 */
+.h2-margin{
+margin-top: 0;
+}
+
+h3{
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);  /* 文字の影 */
+  text-align: center;
+  background-color: #103778;
+}
+
+h4{
+  font-size: 28px;
+  color: #E3371E;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);  /* 文字の影 */
+  text-align: center;
+  text-decoration: solid;
+  padding: 20px;
+}
+
+p{
+  font-size: 20px;
+  color: #212121;
+  padding: 0 20px;
+  word-break: keep-all; /* 単語単位での改行 */
+  line-break: strict;   /* 禁則処理での改行 */
+  /* text-align: justify;  改行での両端揃え均等配置 */
+}
+
+dl{
+padding: 20px;
+}
+
+dl dt{
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+dl dt dd{
+  width: 100%;
+  font-size: 20px;
+}
+
+/* ヘッダーの設定 */
+/* ナビを上下に配置*/
+.nav-top,
+.nav-down{
+  display: flex;       /* h1＆上ナビを左右に配置 */
+  justify-content: center; /* 子要素を水平(横)方向の中央揃えdisplay: flexを指定した親要素に適用 */
+  align-items: center;    /* アイテムを単一行内で垂直(縦)方向の中央揃えdisplay: flexを指定した親要素に適用 */
+  margin: 0 auto;  /* ブロック要素を親要素の中で水平方向（左右）の中央配置 width設定必須 100%NG  */
+  max-width: 1100px;
+  width: 100%;
+}
+
+.nav-down nav.global {
+  width: 100%;
+}
+
+/* 上下ナビのliを横に並べる */
+.right ul,
+.global ul{
+  display: flex; 
+  width: 100%; 
+  justify-content: left;  /* 子要素を水平(横)方向の左揃えdisplay: flexを指定した親要素に適用 */
+  align-items: center;
+}
+
+/* 上ナビの両端揃え */
+.nav-top {
+  display: flex;
+  justify-content: space-between; /* 子要素を水平(横)方向の両端中央揃えdisplay: flexを指定した親要素に適用 */
+  align-items: center;  /* アイテムを単一行内で垂直(縦)方向の中央揃えdisplay: flexを指定した親要素に適用 */
+}
+
+/* 上ナビの設定 */
+nav.right ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  padding: 5px 0;
+}
+
+nav.right ul li a{
+  font-size: 12pt;
+  font-weight: bold;
+  color: #212121;
+  text-align: center; 
+  transition: all 0.3s ease;  /* ホバー効果をスムーズにする */
+}
+
+/* 下ナビの設定 */
+nav.global li {
+  display: flex;
+  justify-content: space-between;  /* 子要素を水平(横)方向の両端中央揃えdisplay: flexを指定した親要素に適用 */
+  align-items: center;    /* アイテムを単一行内で垂直(縦)方向の中央揃えdisplay: flexを指定した親要素に適用 */
+  width: calc(100% / 7);
+}
+
+/* 下ナビの設定 */
+nav.global a {
+  display: block; /* paddingやwidthを適用するためにブロック要素化 */
+  width: 100%; 
+  padding: 10px 0;
+  font-size: 16pt;
+  font-weight: bold;
+  text-align: center; 
+  color: #212121;
+  border-right: 1px solid #fff;
+  transition: all 0.3s ease; /* ホバー効果をスムーズにする */
+}
+
+nav.global ul li:last-child {
+  border-right: none;   /* 右端の線だけ消す */
+}
+
+/* ナビの下部に背景画像を配置 */
+div.visual_img{
+  display: flex;
+  justify-content: center; /* 子要素を水平(横)方向の中央揃えdisplay: flexを指定した親要素に適用 */
+  align-items: center;  /* アイテムを単一行内で垂直(縦)方向の中央揃えdisplay: flexを指定した親要素に適用 */
+  height: 200px;
+  color: #103778;
+  background-image: url(../images/town.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 100%;
+}
+
+
+.visual_img p {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #212121;
+  text-shadow: 2px 2px 2px #FFFFFF;  /* 文字の影 */
+}
+
+.visual_img p span{
+  display: block;
+}
+/* ヘッダーの設定 ここまで　*/
+
+/* キャッチコピー01のスタイル */
+.catchphrase01{
+  max-width: 800px;
+  width: 100%; 
+  margin: 0 auto;  /* ブロック要素を親要素の中で水平方向（左右）の中央配置 width設定必須 100%NG  */
+  padding: 20px 100px 20px 150px;
+  text-align: left; /* テキスト左寄せ */
+} 
+
+.catchphrase01 p {
+  font-size: 20px;
+  color: #212121;
+  overflow-wrap: break-word; /* 単語の途中でも強制的に改行 */
+}
+
+
+/* 無料相談ボタンのスタイル */
+.free-btn {
+  text-align: center; /* ボタンを中央に配置 */
+  margin-top: 30px; /* 上下マージンをつける */
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.free-btn a {
+  display: inline-block; /* パディングとマージンを適用できるようにする */
+  font-size: 25px;
+  padding: 10px 20px;
+  border: 1px solid #103778; /* ボタンの枠線 */
+  border-radius: 5px; /* 角を丸くする */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* BOXの影 */
+  background-color: #E3371E;
+  color: #fff;
+  text-decoration: none; /* 下線を削除 */
+  transition: all 0.3s ease;   /* ホバー効果をスムーズにする */
+}
+
+
+/* 詳細ボタン(小)のスタイル */
+.read{
+  text-align: center; /* ボタンを中央に配置 */
+  padding: 5px; /* 余白をつける */
+  font-size: 14px;
+  font-weight: bold;
+  color: #212121;
+  transition: all 0.3s ease;  /* ホバー効果をスムーズにする */
+}
+
+
+/* 詳細ボタン(大)&同意ボタンのスタイル */
+.read-more,
+.agree-button{
+  text-align: center; /* ボタンを中央に配置 */
+  margin-top: 30px; /* 上下マージンをつける */
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.read-more a,
+.agree-button a{
+  display: inline-block; /* パディングとマージンを適用できるようにする */
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 1px solid #103778; /* ボタンの枠線 */
+  border-radius: 5px; /* 角を丸くする */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* BOXの影 */
+  color: #103778;
+  transition: all 0.3s ease;  /* ホバー効果をスムーズにする */
+}
+
+/* 戻るボタンのスタイル */
+.back-btn{
+  margin-top: 30px; /* 上下マージンをつける */
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.back-btn a {
+  display: inline-block; /* パディングとマージンを適用できるようにする */
+  font-size: 18px;
+  padding: 5px;
+  background-color: #103778;
+  border: 1px solid #103778;  /* ボタンの枠線 */
+  border-radius: 5px; /* 角を丸くする */
+  color: #fff;
+}
+
+/* 会社概要＆サービスのスタイル */
+.canpany,
+.service,
+.recruit{
+  display: flex;
+  flex-wrap: wrap;  /* 自動で折り返す */
+  justify-content: center;  /* 子要素を水平(横)方向の中央揃えdisplay: flexを指定した親要素に適用 */
+  align-content: center;   /* 交差軸での複数行全体の中央揃えdisplay: flexとflex-wrap: wrapの両方必須  */
+  text-align: center;  /* テキストの中央揃え */
+  gap: 20px; /* 画像と画像の間に隙間を設定 */
+  padding: 20px;
+}
+
+/* お手続きのスタイル */
+.flow-list {
+  display: flex;
+  align-items: center;  /* アイテムを単一行内で垂直(縦)方向の中央揃えdisplay: flexを指定した親要素に適用 */
+  justify-content: center;  /* 子要素を水平(横)方向の中央揃えdisplay: flexを指定した親要素に適用 */
+  margin: 0;
+}
+
+.flow-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* アイテムを単一行内で垂直(縦)方向の中央揃えdisplay: flexを指定した親要素に適用 */
+  justify-content: center;  /* 子要素を水平(横)方向の中央揃えdisplay: flexを指定した親要素に適用 */
+  width: 100px;
+  height: 120px;
+  border: 1px solid #103778;
+  border-radius: 8px;
+  padding: 10px 5px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 15px 5px;
+  background-color: #F5E3E0;
+}
+
+.number {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #103778;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #103778;
+  word-break: keep-all  /* 単語単位での改行 */
+}
+
+.arrow {
+  font-size: 25px;
+  font-weight: bold;
+  color: #103778;
+  margin: 0 5px;
+}
+
+
+/* FAQのスタイル */
+.contaner-faq{
+  display: flex;
+  margin: 0 auto;  /* ブロック要素を親要素の中で水平方向（左右）の中央配置 width設定必須 100%NG  */
+  padding-left: 30px;
+}
+
+.faq{
+  display: block;
+  justify-content: center;  /* 子要素を水平(横)方向の中央揃えdisplay: flexを指定した親要素に適用 */
+}
+.faq dt{
+  margin-bottom: 0;
+  padding: 20px 10px 5px 10px; 
+  font-size: 20px; 
+  color: #212121; 
+  font-weight: bold;
+}
+
+.faq dd{
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 20px 10px; 
+  border: 1px solid #103778;
+  border-radius: 5px; /* 角を丸くする */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* BOXの影 */
+  font-size: 16px; 
+  color: #212121; 
+  background-color: #F5E3E0;
+  word-break: keep-all  /* 単語単位での改行 */
+}
+
+/* Qのスタイル */
+.faq dt{
+  display: flex;
+  align-items: flex-end;  /* アイテムを単一行内で垂直(縦)方向の下揃えdisplay: flexを指定した親要素に適用 */
+  font-size: 22px;
+}
+.q {
+  font-size: 30px;
+  font-weight: bold; 
+  color: white;
+  background-color: #103778;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;  /* 子要素を水平(横)方向の中央揃えdisplay: flexを指定した親要素に適用 */
+  align-items: center;  /* アイテムを単一行内で垂直(縦)方向の中央揃えdisplay: flexを指定した親要素に適用 */
+  border-radius: 5px;
+}
+
+  /* Aのスタイル */
+.faq dd{
+  display: flex;
+  align-items: flex-start;  /* アイテムを単一行内で垂直(縦)方向の中央揃えdisplay: flexを指定した親要素に適用 */
+  gap: 20px;
+}
+.a {
+  font-size: 30px;
+  font-weight: bold; 
+  color: white;
+  background-color: #FFC400;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;  /* 子要素を水平(横)方向の中央揃えdisplay: flexを指定した親要素に適用 */
+  align-items: center;  /* アイテムを単一行内で垂直(縦)方向の中央揃えdisplay: flexを指定した親要素に適用 */
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* セミナー＆コラムのスタイル */
+.seminar,
+ .column{
+  padding-left: 150px;
+ }
+
+
+.seminar li,
+ .column li{
+  display: flex;
+  align-items: center;  /* アイテムを単一行内で垂直(縦)方向の中央揃えdisplay: flexを指定した親要素に適用 */
+  margin-bottom: 20px; /* 各アイテム間の下部余白 */
+  padding: 20px 0;
+  gap: 20px; /* 要素間の隙間を調整 */
+  text-align: left;  /* テキストの左寄せ */
+  word-break: keep-all  /* 単語単位での改行 */
+}
+
+/*  改行してテキストとボタンを縦に並べる */
+.kaigyo {
+  display: flex;
+  flex-direction: column; /* 子要素を縦に並べる */
+}
+
+/* ボタンのを左寄せに */
+.read {
+  align-self: flex-start;
+  margin-top: 5px; /* 必要に応じて調整 */
+}
+
+/* セミナー＆コラムの日付で改行するためにブロック要素に変更 */
+.seminar p time,
+.column p time,
+.seminar p read,
+.column p read{
+  display: block;
+}
+
+
+/* リクルートのスタイル */
+.recruit-content ul li figure {
+  font-size: 16px;
+  color: #212121;
+  text-align: center;
+  margin: 10px;
+}
+
+
+.kaigyo p{
+  font-size: 20px;
+  text-align: left; /* リストのテキストを中央寄せに追加 */
+  word-break: keep-all;  /* 単語単位での改行 */
+  text-indent: 2em;
+}
+
+.indent p{
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+.indent p:first-child{
+  text-indent: 1em;   /* 最初の行だけを1文字分（1em）字下げ */
+}
+
+
+/* 会社概要ページのスタイル */
+.rinen p{
+  width: 100%;
+  padding: 0 250px 20px;
+}
+.ceo-01{
+  display: flex;
+}
+
+dl.gaiyou dt dd{
+  display: flex;
+  flex-wrap: wrap;
+}
+/* 会社概要ページ　ここまで */
+
+/* お問い合わせページのスタイル */
+form{
+  width: 80%;
+  margin: 0 auto;  /* ブロック要素を親要素の中で水平方向（左右）の中央配置 width設定必須 100%NG  */
+}
+
+.form-nav,
+.agree{
+  padding: 20px;
+}
+
+/* お客様情報入力フォーム */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"]{
+  width: 100%;  /* 親要素の幅いっぱいに広げる*/
+  height:30px; 
+  padding: 8px 10px;  /* 枠内の余白（文字と枠線の間） */
+  border: 1px solid #999;
+}
+
+input{
+  font-size: 20px;
+}
+
+/* お問合せ内容ラジオボタン */
+.check{
+  display: flex; 
+  gap: 30px;  /* ★ボタンとボタンの間を30px空ける */
+  padding: 20px;
+}
+
+
+/* お問合せ詳細入力フォーム */
+.form-group textarea{
+  width: 100%;  /* 親要素の幅いっぱいに広げる*/
+  height:150px; 
+  padding: 8px 10px;  /* 枠内の余白（文字と枠線の間） */
+  border: 1px solid #999;
+}
+
+/* 個人情報保護方針のスタイル */
+.scroll-box {
+ max-width: 100%;
+ max-height: 250px; /*ボックスの高さを変更 */
+ overflow-y: scroll;  /*垂直スクロールバーを表示 */
+ padding: 15px; /* ボックス内の文章が枠線に張り付かないように内側の余白を設定 */
+ border: 1px solid #ccc;
+ background-color: #f7f7f7; /* 薄い背景色で視認性を向上 */
+}
+
+/* 同意確認のスタイル */
+.doi{
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.agree a{
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+/* お問い合わせページ　ここまで */
+
+/* 住所＆googleマップ */
+.foot-access {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;  /* ブロック要素を親要素の中で水平方向（左右）の中央配置 width設定必須 100%NG  */
+}
+
+.address-map{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.address-map p{
+  font-size: 20px;
+  text-align: left;
+  word-break: keep-all  /* 単語単位での改行 */
+}
+
+.address ol{
+padding-top: 60px;
+}
+
+.address ol li{
+  font-size: 16px;
+  text-align: right; /* リストのテキストを中央寄せに追加 */
+  word-break: keep-all  /* 単語単位での改行 */
+}
+
+.transit ol li{
+  font-size: 16px; 
+  text-align: left;
+  word-break: keep-all  /* 単語単位での改行 */
+}
+/* 住所＆googleマップ　ここまで */
+
+/*　フッターのスタイル */
+nav.local{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 30px 0;
+  background-color: #FAFAFA;
+}
+
+nav.local ul li a{
+  font-size: 16px;
+  color: #212121;
+  background-color: #FAFAFA;
+}
+
+.foot-nav{
+  margin: 0 auto;  /* ブロック要素を親要素の中で水平方向（左右）の中央配置 width設定必須 100%NG  */
+  padding-bottom: 20px;
+  border-bottom: 1px solid #103778;
+}
+
+/* smallタグを中央寄せにする */
+footer small {
+  display: block; /* text-alignを有効にするためにブロック要素化 */
+  text-align: center;
+  padding: 10px 0; /* 上下の余白を追加 */
+  background-color: #103778;
+  color: #fff;
+}
+/*　フッター　ここまで */
+
+/* ホバー色設定 ココに全部まとめて記述 */
+@media (hover:hover){
+.global a:hover {
+  background-color: #103778; 
+  color: #fff;
+  font-weight: bold;
+}
+
+.right a:hover{
+  color: #fff;
+  background-color: #103778;
+  font-weight: bold;
+}
+
+.free-btn a:hover {
+  background-color: #103778; /* ホバー時の背景色 */
+  color: #fff; /* ホバー時の文字色 */
+  font-weight: bold;
+}
+
+.read a:hover {
+  text-decoration: underline; /* ホバー時に下線を表示 */
+  font-weight: bold;
+}
+
+.read-more a:hover {
+  background-color: #103778; /* ホバー時の背景色 */
+  color: #fff; /* ホバー時の文字色 */
+  font-weight: bold;
+}
+
+.back-btn a:hover {
+  background-color: #fff; /* ホバー時の背景色 */
+  color: #000; /* ホバー時の文字色 */
+  font-weight: bold;
+}
+/* ホバー色設定 ここまで */
+
+
+/* レスポンシブ対応 */
+@media screen and (max-width:768px){
+  .wrapper{
+    width: 100%;
+  }
+  header nav.global ul li{
+    max-width: 100%;
+  }
+  header nav.global ul li:last-child a{
+    border-right: none;
+  }
+  main h2{
+    font-size: 20px;
+  }
+  .content{
+    flex-direction: column;
+  }
+}
